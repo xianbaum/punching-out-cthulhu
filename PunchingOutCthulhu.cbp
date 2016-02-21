@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="PunchingOutCthulhu" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/PunchingOutCthulhu" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/PunchingOutCthulhu" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="C:/Users/Christian/Programming/SDL2-2.0.0/i686-w64-mingw32/include/SDL2" />
+			<Add directory="include" />
+			<Add directory="src" />
+			<Add directory="C:/Users/Christian/Programming/SDL2_image-2.0.0/i686-w64-mingw32/include/SDL2" />
+		</Compiler>
+		<Linker>
+			<Add option="-lmingw32 -lSDL2main -lSDL2 -lSDL2_Image" />
+			<Add directory="C:/Users/Christian/Programming/SDL2-2.0.0/i686-w64-mingw32/lib" />
+			<Add directory="C:/Users/Christian/Programming/SDL2_image-2.0.0/i686-w64-mingw32/lib" />
+		</Linker>
+		<Unit filename="include/Actor.h" />
+		<Unit filename="include/Angle.h" />
+		<Unit filename="include/Background.h" />
+		<Unit filename="include/Camera.h" />
+		<Unit filename="include/Interval.h" />
+		<Unit filename="include/Line.h" />
+		<Unit filename="include/Point.h" />
+		<Unit filename="include/Room.h" />
+		<Unit filename="include/Sprite.h" />
+		<Unit filename="include/World.h" />
+		<Unit filename="include/movement.h" />
+		<Unit filename="src/Actor.cpp" />
+		<Unit filename="src/Angle.cpp" />
+		<Unit filename="src/Background.cpp" />
+		<Unit filename="src/Camera.cpp" />
+		<Unit filename="src/Interval.cpp" />
+		<Unit filename="src/Line.cpp" />
+		<Unit filename="src/Room.cpp" />
+		<Unit filename="src/Sprite.cpp" />
+		<Unit filename="src/World.cpp" />
+		<Unit filename="src/main.cpp" />
+		<Unit filename="src/movement.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
